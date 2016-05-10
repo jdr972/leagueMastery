@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+body {
+
+  font-family: Raleway;
+  background: #1C1919  no-repeat right top;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: background 1s;
+}
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+#chg {
+  color: white;
+  background: #1C1919;
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.glyphicon-search{
+  padding-right: 8px;
+}
+#disp {
+  //background-color: #999999;
+  background: rgba(153, 153, 153, .7);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 100px  auto 10px auto;
+  border-radius: 15px;
+}
+#disp p {
+  font-size: 18px;
+  text-align: center
+}
+
+.basic {
+  //background-color: #999999;
+  background: rgba(153, 153, 153, .7);
+  margin: 10px auto 20px auto;
+  border-radius: 15px;
+}
+.inp{
+  //background: #999999;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inp:focus, .inp:active:focus, .inp.active:focus {
+    outline: 0 none;
+}
+
+.basic img {
+  display: block;
+  margin: 5px auto;
+  border-radius: 50%
+
+}
+
+.basic #sumName {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.basic #rank {
+  //font-family: Playfair Display;
+  text-align: center;
+  font-size: 18px;
+}
+
+.basic #lp {
+  //font-family: Playfair Display;
+  text-align: center;
+  font-size: 18px;
+}
+
+.basic #winlos {
+  //font-family: Playfair Display;
+  text-align: center;
+  font-size: 18;
+}
+
+#masteryData {
+  //background: #999999;
+  background: rgba(153, 153, 153, .7);
+  border-radius: 15px;
+}
+#list p{
+  padding-top: 7.8px;
+  padding-bottom: 7.8px;
+  font-size: 20px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+#list1 img {
+  display: block;
+  margin: 5px auto;
+}
