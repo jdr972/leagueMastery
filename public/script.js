@@ -30,7 +30,7 @@ function getChamps(){
 }
 
 function fetchInfo(sumName){
-  var url = "https://hidden-squid.herokuapp.com/api/summonerinfo?name=stralic"+sumName
+  var url = "https://hidden-squid.herokuapp.com/api/summonerinfo?name="+sumName
   $.getJSON(url, function(object){
     summonerId = object[sumName].id;
     summonerName = object[sumName].name;
