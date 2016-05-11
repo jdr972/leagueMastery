@@ -38,7 +38,7 @@ function fetchInfo(sumName){
     level = object[sumName].summonerLevel;
     icon = object[sumName].profileIconId;
     iconUrl = "https://ddragon.leagueoflegends.com/cdn/6.8.1/img/profileicon/"+icon+".png"
-    var rankedUrl = "https://hidden-squid.herokuapp.com/api/ranked?name=stralic"+sumName
+    var rankedUrl = "https://hidden-squid.herokuapp.com/api/ranked?name="+sumName
     $.getJSON(rankedUrl, function(object){
       if(!object.hasOwnProperty('status')){
         console.log(object[summonerId])
