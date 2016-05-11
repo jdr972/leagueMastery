@@ -112,7 +112,7 @@ function displayMastery(){
           if(k == "key" && v == masteryData[i].championId){
             if(i == 0){
               var skinNumber = 0;
-              var url = "https://server-jdr972.c9users.io/api/champskins?id="+masteryData[i].championId
+              var url = "https://hidden-squid.herokuapp.com/api/champskins?id="+masteryData[i].championId
               $.ajax({
                 url: url,
                 async: false,
@@ -147,7 +147,7 @@ function displayMastery(){
 }
 
 function getMasteryData(dude){
-  var url = "https://server-jdr972.c9users.io/api/champmastery?name="+dude
+  var url = "https://hidden-squid.herokuapp.com/api/champmastery?name="+dude
   var someData
   $.ajax({
     url: url,
@@ -170,7 +170,7 @@ function changeBg(src){
 
 var defaultBg = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg";
 $.ajax({
-  url: "https://server-jdr972.c9users.io/api/champskins?id=67",
+  url: "https://hidden-squid.herokuapp.com/api/champskins?id=67",
   success: function(data){
     var number = Math.floor(Math.random() * data.skins.length)
     if(number){
