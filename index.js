@@ -78,7 +78,7 @@ app.get('/api/champname', function(req, res) {
 app.get('/api/champmastery', function(req, res) {
     var name = req.query.name
     console.log("mastery info for " + name + " requested.")
-    var url = "https://server-jdr972.c9users.io/api/summonerinfo?name="+name
+    var url = "https://hidden-squid.herokuapp.com/api/summonerinfo?name=stralic"+name
     request({
         url: url,
         json: true
@@ -110,7 +110,7 @@ app.get('/api/champmastery', function(req, res) {
 app.get('/api/ranked', function(req, res) {
     var name = req.query.name
     console.log("ranked info for " + name + " requested.")
-    var url = "https://server-jdr972.c9users.io/api/summonerinfo?name="+name
+    var url = "https://hidden-squid.herokuapp.com/api/summonerinfo?name=stralic"+name
     request({
         url: url,
         json: true

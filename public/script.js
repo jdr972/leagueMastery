@@ -22,7 +22,7 @@ var champions = getChamps()
 function getChamps(){
   var coolData
   $.ajax({
-    url: "https://server-jdr972.c9users.io/champions.json",
+    url: "https://hidden-squid.herokuapp.com/champions.json",
     success: function(data){coolData = data},
     async: false
   })
@@ -30,7 +30,7 @@ function getChamps(){
 }
 
 function fetchInfo(sumName){
-  var url = "https://server-jdr972.c9users.io/api/summonerinfo?name="+sumName
+  var url = "https://hidden-squid.herokuapp.com/api/summonerinfo?name=stralic"+sumName
   $.getJSON(url, function(object){
     summonerId = object[sumName].id;
     summonerName = object[sumName].name;
@@ -38,7 +38,7 @@ function fetchInfo(sumName){
     level = object[sumName].summonerLevel;
     icon = object[sumName].profileIconId;
     iconUrl = "https://ddragon.leagueoflegends.com/cdn/6.8.1/img/profileicon/"+icon+".png"
-    var rankedUrl = "https://server-jdr972.c9users.io/api/ranked?name="+sumName
+    var rankedUrl = "https://hidden-squid.herokuapp.com/api/ranked?name=stralic"+sumName
     $.getJSON(rankedUrl, function(object){
       if(!object.hasOwnProperty('status')){
         console.log(object[summonerId])
