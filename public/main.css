@@ -30,8 +30,7 @@ body {
 #disp {
   //background-color: #999999;
   background: rgba(153, 153, 153, .7);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   margin: 100px  auto 10px auto;
   border-radius: 15px;
 }
@@ -50,6 +49,7 @@ body {
   //background: #999999;
   border-radius: 8px;
   display: block;
+  width: 100%
   margin-left: auto;
   margin-right: auto;
 }
