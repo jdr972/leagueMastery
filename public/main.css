@@ -93,17 +93,21 @@ body {
   background: rgba(153, 153, 153, .7);
   border-radius: 15px;
 }
-#list p{
-  padding-top: 7.8px;
-  padding-bottom: 7.8px;
-  font-size: 20px;
-  margin-top: 11px;
-  margin-bottom: 11px;
+
+.champ img {
+  display: block;
+  margin: 0 auto;
 }
 
-#list1 img {
-  display: block;
-  margin: 5px auto;
+.champ {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.champ p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
 }
 
 /* Let's get this party started */

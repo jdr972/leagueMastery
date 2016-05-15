@@ -101,15 +101,13 @@ function displayMastery(){
   masteryData = undefined;
   masteryData = getMasteryData(name);
   console.log(masteryData.length)
-  var list1 = '';
-  var list2 = '';
-  var list3 = '';
-  var list4 = '';
+  var html = "";
   $("#masteryData").fadeOut(500, function(){
     for(var i = 0; i<masteryData.length; i++){
       $.each(champions.data, function(key, value){
         $.each(champions.data[key], function(k, v){
           if(k == "key" && v == masteryData[i].championId){
+            //background change
             if(i == 0){
               var skinNumber = 0;
               var url = "https://hidden-squid.herokuapp.com/api/champskins?id="+masteryData[i].championId
@@ -128,6 +126,26 @@ function displayMastery(){
 
                 }
             }
+
+            var spacedPoints = masteryData[i].championPoints
+            spacedPoints = spacedPoints.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+            html += `<div class="champ">
+            <div class="row">
+                <div class="col-xs-3"><img src="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/champion/`+key+`.png" alt="" height="50px" /></div>
+                <div class="col-xs-3"><p>`+key+`</p></div>
+                <div class="col-xs-3"><p>Level `+masteryData[i].championLevel+`</p></div>
+                <div class="col-xs-3"><p>`+spacedPoints+`</p></div>
+            </div>
+            </div>
+            `
+            $("#masteryData").html(html);
+            $("#masteryData").fadeIn(1000)
+
+
+
+
+            /*
             list1 += `<img src="https://ddragon.leagueoflegends.com/cdn/6.9.1/img/champion/`+key+`.png" alt="" height="49.5px"/>`
             $("#list1").html(list1)
             list2 += `<p>`+key+`</p>`
@@ -138,7 +156,7 @@ function displayMastery(){
             spacedPoints = spacedPoints.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             list4 += `<p>`+spacedPoints+`</p>`
             $("#list4").html(list4)
-            $("#masteryData").fadeIn(1000)
+            $("#masteryData").fadeIn(1000) */
           }
         })
       })
