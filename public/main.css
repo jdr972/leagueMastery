@@ -45,6 +45,10 @@ body {
   margin: 10px auto 20px auto;
   border-radius: 15px;
 }
+.basic a {
+  color: #F6F7EB;
+  text-decoration: none;
+}
 .inp{
   //background: #999999;
   border-radius: 8px;
