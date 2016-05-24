@@ -132,7 +132,7 @@ function displayMastery(){
 
             html += `<div class="champ">
             <div class="row">
-                <div class="col-xs-3"><img src="http://ddragon.leagueoflegends.com/cdn/6.9.1/img/champion/`+key+`.png" alt="" height="50px" /></div>
+                <div class="col-xs-3"><img src="https://ddragon.leagueoflegends.com/cdn/6.9.1/img/champion/`+key+`.png" alt="" height="50px" /></div>
                 <div class="col-xs-3"><p>`+key+`</p></div>
                 <div class="col-xs-3"><p>Level `+masteryData[i].championLevel+`</p></div>
                 <div class="col-xs-3"><p>`+spacedPoints+`</p></div>
